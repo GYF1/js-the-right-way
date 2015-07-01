@@ -72,7 +72,9 @@
                 <p>
                     Created by Netscape in 1995 as an extension of HTML for Netscape Navigator 2.0, JavaScript had as its main function the manipulation of HTML documents and form validation.
 
-                    Before winning this name so famous nowadays, JavaScript was called Mocha. When it first shipped in beta releases, it was officially called LiveScript and finally, when it was released by Sun Microsystems, was baptized with the name by which it is known today.
+                    Before winning this name so famous nowadays, JavaScript was called Mocha.
+                    When it first shipped in beta releases, it was officially called LiveScript and finally,
+                    when it was released by Sun Microsystems, was baptized with the name by which it is known today.
 
                     Because of the similar names, people confuse JavaScript with Java. Although both have the lexical structure of programming, they are not the same language.
 
@@ -82,7 +84,8 @@
                 <h3>当前版本</h3>
 
                 <p>
-                    The JavaScript standard is ECMAScript. As of 2012, all modern browsers fully support ECMAScript 5.1. Older browsers support at least ECMAScript 3. A 6th major revision of the standard is being worked on.
+                    The JavaScript standard is ECMAScript. As of 2012, all modern browsers fully support ECMAScript 5.1.
+                    Older browsers support at least ECMAScript 3. A 6th major revision of the standard is being worked on.
                 </p>
 
                 <p>
@@ -124,7 +127,7 @@
                 <h3>面向对象</h3>
 
                 <p>
-                    JavaScript has strong object-oriented programming capabilities, even though some debates have taken place due to the differences in object-oriented JavaScript compared to other languages.
+                    由于面向对象的JavaScript和其他的面向对象的语言相比有些不太一样，对JavaScipt的面向对象一直存在着争论，但是JavaScript有着很强的面向对象的编程能力是难以掩盖的。
                 </p>
 
                 <p class="source">
@@ -134,62 +137,67 @@
                 <h3>匿名函数</h3>
 
                 <p>
-                    Anonymous functions are functions that are dynamically declared at runtime. They’re called anonymous functions because they aren’t given a name in the same way as normal functions.
+                    匿名函数是在运行时才定义的函数。因为他们和其他一般的函数相比，没有给一个指定的名字，所以被称之为“匿名函数”。
                 </p>
 
                 <p class="source">
-                    来源: <a target="_blank" href="http://helephant.com/2008/08/23/javascript-anonymous-functions/">JavaScript anonymous functions</a>
+                    来源: <a target="_blank" href="http://gyf1.com/blog/2015/04/29/javascript-anonymous-functions/">JavaScript匿名函数</a>
                 </p>
 
                 <h3>函数是一等对象</h3>
 
                 <p>
-                    Functions in JavaScript are first class objects. This means that JavaScript functions are just a special type of object that can do all the things that regular objects can do.
+                    函数在JavaScript里面是属于一等对象。这就意味着，函数是一个特殊类型的对象，他们可以做其他一般对象可以做的任何事情。
                 </p>
 
                 <p class="source">
-                    来源: <a target="_blank" href="http://helephant.com/2008/08/19/functions-are-first-class-objects-in-javascript/">Functions are first class objects in JavaScript</a>
+                    来源: <a target="_blank" href="http://gyf1.com/blog/2015/05/28/functions-are-first-class-objects-in-javascript/">Function是Javascript里面的一等对象</a>
                 </p>
 
                 <h3>松散类型</h3>
 
                 <p>
-                    For many front-end developers, JavaScript was their first taste of a scripting and/or interpretive language. To these developers, the concept and implications of loosely typed variables may be second nature. However, the explosive growth in demand for modern web applications has resulted in a growing number of back-end developers that have had to dip their feet into the pool of client-side technologies. Many of these developers are coming from a background of strongly typed languages, such as C# or Java, and are unfamiliar with both the freedom and the potential pitfalls involved in working with loosely typed variables.
+                    对于很多前端工程师来说，JavaScript是他们第一次尝试脚本或者解释型的语言。
+                    对于这些程序员来说，松散类型的概念和含义可能是第二世界。
+                    然而，随着web2.0 爆发式的应用需求，使得之前很多做后端的程序员也慢慢开始研究前端的技术。
+                    很多这些程序员之前做的是具有强类型的语言，比如C#或者Java, 因此会有一部分程序员并不熟悉松散类型变量的自由以及潜在的陷阱。
                 </p>
 
                 <p class="source">
-                    来源: <a target="_blank" href="http://blog.jeremymartin.name/2008/03/understanding-loose-typing-in.html">Understanding Loose Typing in JavaScript</a>
+                    来源: <a target="_blank" href="http://gyf1.com/blog/2015/03/30/understanding-loose-typing-in-javascript/">理解JavaScript里的松散类型</a>
                 </p>
 
-                <h3>Scoping and Hoisting</h3>
+                <h3>作用域和作用域提升</h3>
 
                 <p>
-                    <b>Scoping:</b> In JavaScript, functions are our <i>de facto</i> scope delimiters for declaring vars, which means that usual blocks from loops and conditionals (such as if, for, while, switch and try) DON'T delimit scope, unlike most other languages. Therefore, those blocks will share the same scope as the function which contains them. This way, it might be dangerous to declare vars inside blocks as it would seem the var belongs to that block only.
+                    <b>作用域:</b> In JavaScript, functions are our <i>de facto</i> scope delimiters for declaring vars, which means that usual blocks from loops and conditionals (such as if, for, while, switch and try) DON'T delimit scope, unlike most other languages. Therefore, those blocks will share the same scope as the function which contains them. This way, it might be dangerous to declare vars inside blocks as it would seem the var belongs to that block only.
                 </p>
 
                 <p>
-                    <b>Hoisting:</b> On runtime, all var and function declarations are moved to the beginning of each function (its scope) - this is known as Hoisting. Having said so, it is a good practice to declare all the vars altogether on the first line, in order to avoid false expectations with a var that got declared late but happened to hold a value before - this is a common problem for programmers coming from languages with block scope.
+                    <b>作用域提升:</b> On runtime, all var and function declarations are moved to the beginning of each function (its scope) - this is known as Hoisting. Having said so, it is a good practice to declare all the vars altogether on the first line, in order to avoid false expectations with a var that got declared late but happened to hold a value before - this is a common problem for programmers coming from languages with block scope.
                 </p>
 
                 <p class="source">
-                    来源: <a target="_blank" href="http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html">JavaScript Scoping and Hoisting</a>
+                    来源: <a target="_blank" href="http://gyf1.com/blog/2015/02/01/javascript-scoping-and-hoisting/">JavaScript作用域和作用域提升</a>
                 </p>
 
                 <h3>函数绑定</h3>
 
                 <p>
-                    Function binding is most probably the least of your concerns when beginning with JavaScript, but when you realize that you need a solution to the problem of how to keep the context of this within another function, then you might realize that what you actually need is <b>Function.prototype.bind()</b>.
+                    函数绑定是你刚接触JavaScript时很有可能接触不到的一个概念。但是当你遇到一个问题，你需要把一个上下文环境传到另一个function里面，
+                    那个时候你可能会意识到你实际需要的便是<b>Function.prototype.bind()</b>
                 </p>
 
                 <p class="source">
-                    来源: <a target="_blank" href="http://coding.smashingmagazine.com/2014/01/23/understanding-javascript-function-prototype-bind/">Understanding JavaScript’s Function.prototype.bind</a>
+                    来源: <a target="_blank" href="http://gyf1.com/blog/2015/01/17/understanding-javascript%E2%80%99s-functionprototypebind/">理解JavaScript的Function.prototype.bind</a>
                 </p>
 
                 <h3>闭包函数</h3>
 
                 <p>
-                    Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created in.
-        		    It is a important concept to understand as it can be useful during development, like emulating private methods. It can also help to learn how to avoid common mistakes, like creating closures in loops.
+                    闭包是可以访问独立变量的函数。换句话说，闭包里定义的函数会记得创建它的环境的变量。
+                    这是一个需要深入理解的非常重要的概念，因为闭包在开发中真的很有用，比如说模拟私有变量。
+                    闭包对我们避免一些常见的错误也很有帮助，比如在循环里创建闭包。
                  </p>
 
                 <p class="source">
@@ -199,8 +207,12 @@
           	    <h3>严格模式</h3>
 
                 <p>
-                    ECMAScript 5's strict mode is a way to opt in to a restricted variant of JavaScript. Strict mode isn't just a subset: it intentionally has different semantics from normal code. Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don't rely on strict mode without feature-testing for support for the relevant aspects of strict mode. Strict mode code and non-strict mode code can coexist, so scripts can opt into strict mode incrementally.
-                 </p>
+                    ES5的严格模式是一种把JavaScript限制的更严格的方式。
+                    严格模式不只是一个子集，它会有意的让一些常用的代码会有不同的运行结果。
+                    对那些不支持严格模式的浏览器，运行严格模式的代码，会有些不同的结果。
+                    因此不要依赖于严格模式，而应该对使用严格模式的功能点充分的测试。
+                    严格模式的代码和非严格模式的代码是可以共存的，所以严格模式的代码可以一点点的增加。
+                </p>
 
                 <p class="source">
                     来源: <a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode">MDN - 严格模式</a>
@@ -209,12 +221,15 @@
                 <h3>立即执行的函数表达式(IIFE)</h3>
 
                 <p>
-                   An immediately-invoked function expression is a pattern which produces a lexical scope using JavaScript's function scoping. Immediately-invoked function expressions can be used to avoid variable hoisting from within blocks, protect against polluting the global environment and simultaneously allow public access to methods while retaining privacy for variables defined within the function.<br/><br/>
-                   <i>This pattern has been referred to as a self-executing anonymous function, but <a target="_blank" href="http://twitter.com/cowboy">@cowboy</a> (Ben Alman) introduced the term IIFE as a more semantically accurate term for the pattern</i>.
+                    由于函数是有作用域范围的，这样我们可以实现一种模式－理解执行的函数表达式，通过这种模式我们可以产生出一个个作用域。
+                    立即执行的函数表达式，可以用来解决变量冲突的问题，避免有变量污染了全局环境的变量。
+                    这样我们可以在函数的作用域里面定义一些私有的变量，但同时可以访问函数里面返回的方法。
+
+                    <i>这中模式也被叫做“自执行的匿名函数”</i>
                 </p>
 
                 <p class="source">
-                    来源: <a target="_blank" href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/">立即执行的函数表达式(IIFE)</a>
+                    来源: <a target="_blank" href="http://gyf1.com/blog/2015/01/17/immediately-invoked-function-expression-%28iife%29/">立即执行的函数表达式(IIFE)</a>
                 </p>
 
 
