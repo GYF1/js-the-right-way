@@ -12,7 +12,6 @@
         <meta name="robots" content="index,follow,archive">
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <link rel="stylesheet" href="css/core.min.css">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet">
     </head>
 
     <body>
@@ -29,13 +28,14 @@
             <div class="wrapper">
                 <h1>目标读者</h1>
 
-                <p>本文的目标是想帮助初学者学习JavaScript这门编程语言；如果你是一个已经有些工作经验的程序员，在这你也可以巩固一些与JavaScript相关的最佳实践。</p>
+                <p>本文的目标是想帮助初学者学习JavaScript这门编程语言；</p>
+                <p>如果你是一个已经有些工作经验的程序员，你也可以大概看看是不是涉及到的东西真的对学习JavaScript会有帮助。</p>
 
-                <p>虽然主题的名称叫做“学习之路”，但是这绝不是唯一一个学习JavaScript的路线</p>
+                <p>虽然主题的名称叫做“学习之路”，但是这肯定不是唯一一个学习JavaScript的路线。</p>
 
                 <p>
-                    我们只是从大牛们那边把一些好的文章、建议、技巧收集到一起，放到这个主题下面。
-                    但是由于他们的确是一些很出色的程序员，使得我们相信他们的干货可以组成很不错的学习之路。
+                    里面的东西都是从业内大牛们那边把一些好的文章、建议、技巧收集在一起，放到这个主题下面。
+                    不过因为他们的确是一些很出色的程序员，所以我们可以相信他们的总结对学习JavaScript应该会很有帮助。
                 </p>
             </div>
         </section>
@@ -70,32 +70,33 @@
                 <h3>关于</h3>
 
                 <p>
-                    Created by Netscape in 1995 as an extension of HTML for Netscape Navigator 2.0, JavaScript had as its main function the manipulation of HTML documents and form validation.
-
-                    Before winning this name so famous nowadays, JavaScript was called Mocha.
-                    When it first shipped in beta releases, it was officially called LiveScript and finally,
-                    when it was released by Sun Microsystems, was baptized with the name by which it is known today.
-
-                    Because of the similar names, people confuse JavaScript with Java. Although both have the lexical structure of programming, they are not the same language.
-
-                    Different from C, C# and Java, JavaScript is an interpreted language. It means that it needs an "interpreter". In case of JavaScript, the interpreter is the browser.
+                    90年的时候网络特别慢，为了在给服务器提交数据之前能够先进行一些页面数据的校验，JavaScript作为脚本语言应运而生，除了可以进行表单验证，那时的JavaScript也可以对html页面进行一些操作。
+                    <br/><br/>
+                    JavaScript的名字也经历了一些波折，最后为了借助于当时很火的Java成名，最终取名为JavaScript。
+                    <br/><br/>
+                    由于名字的相似，很多人会混淆JavaScript和Java。尽管当初JavaScript之父的确是有被期望做出一种类似于Java的语言，但是不管怎么样，我们要清楚的知道JavaScript和Java真的没有一点半毛钱关系。
+                    如果对JavaScript的诞生过程感兴趣，可以看下<a href="http://www.ruanyifeng.com/blog/2011/06/birth_of_javascript.html" target="_blank">Javascript诞生记</a>
+                    <br/><br/>
+                    和C、C#、Java不一样，JavaScript是解释型的语言，也就是说JavaScript需要解释器。
                 </p>
 
                 <h3>当前版本</h3>
 
                 <p>
-                    The JavaScript standard is ECMAScript. As of 2012, all modern browsers fully support ECMAScript 5.1.
-                    Older browsers support at least ECMAScript 3. A 6th major revision of the standard is being worked on.
+                    JavaScript 的标准就是 ECMAScript。截至 2012 年为止，所有的主流浏览器都完整的支持 ECMAScript 5.1，旧式的浏览器至少支持 ECMAScript 3 标准。
+                    在2015年6月17日，ECMAScript的第六个版本正式发布，该版本正式名称为ECMAScript 2015，但通常被称为ECMAScript 6或者ES6。
                 </p>
 
                 <p>
-                    A good reference to versions, references and news about JavaScript can be found at the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/JavaScript">Mozilla Developer Network</a>.
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/JavaScript">Mozilla Developer Network</a>是一个比较好的参考网站，上面会有JavaScript的版本信息、参考手册、新闻等。
                 </p>
 
                 <h3>DOM（文档对象模型）</h3>
 
                 <p>
-                    The Document Object Model (DOM) is an API for HTML and XML documents. It provides a structural representation of the document, enabling you to modify its content and visual presentation by using a scripting language such as JavaScript. See more at <a target="_blank" href="https://developer.mozilla.org/en-US/docs/DOM">Mozilla Developer Network - DOM</a>.
+                    文档对象模型 (DOM) 是 HTML 和 XML 文档的编程接口。
+                    它给文档（结构树）提供了一个结构化的表述并且定义了一种方式—程序可以对结构树进行访问，以改变文档的结构，样式和内容。
+                    想看更多的细节可以 <a target="_blank" href="https://developer.mozilla.org/en-US/docs/DOM">点这里</a>.
                 </p>
             </div>
         </section>
@@ -112,10 +113,15 @@
                     但是我们推荐你查看<a target="_blank" href="https://github.com/rwldrn/idiomatic.js/">Idiomatic.js</a>.
                 </p>
 
-                <h3>Linting</h3>
+                <h3>代码工具</h3>
 
                 <p>
-                    Nowadays the best tool for linting your JavaScript code is <a target="_blank" href="http://www.jshint.com/">JSHint</a>. We recommend that whenever possible you verify your code style and patterns with a Lint tool.
+                    代码检查工具(Linting): 目前对JavaScript代码最好的检查工具是<a target="_blank" href="http://www.jshint.com/">JSHint</a>.
+                    强烈推荐小伙伴们尽可能多的使用代码检查工具。
+                </p>
+
+                <p>
+                    统一代码工具(EditorConfig): <a target="_blank" href="http://editorconfig.org/">EditorConfig</a>可以帮助开发者在不同的编辑器和IDE之间定义和维护一致的代码风格。
                 </p>
             </div>
         </section>
@@ -127,7 +133,7 @@
                 <h3>面向对象</h3>
 
                 <p>
-                    由于面向对象的JavaScript和其他的面向对象的语言相比有些不太一样，对JavaScipt的面向对象一直存在着争论，但是JavaScript有着很强的面向对象的编程能力是难以掩盖的。
+                    由于面向对象的JavaScript和其他的面向对象的语言相比有些不太一样，对JavaScipt的面向对象一直存在着争论，但是JavaScript有着很强的面向对象的编程能力还是难以掩盖的。
                 </p>
 
                 <p class="source">
@@ -170,11 +176,13 @@
                 <h3>作用域和作用域提升</h3>
 
                 <p>
-                    <b>作用域:</b> In JavaScript, functions are our <i>de facto</i> scope delimiters for declaring vars, which means that usual blocks from loops and conditionals (such as if, for, while, switch and try) DON'T delimit scope, unlike most other languages. Therefore, those blocks will share the same scope as the function which contains them. This way, it might be dangerous to declare vars inside blocks as it would seem the var belongs to that block only.
+                    <b>作用域:</b> 在JavaScript里面是通过function来形成作用域的。而对于循环语句或者条件语句（比如说if、for、while、switch、try），都是没有块作用域的概念，这一点和其他语言是不一样的。
+                    因此，在循环语句或者条件语句里面定义的变量会同样共享给包含它们的function，所以我们要转换下思维，不要误以为存在块作用域的概念。
                 </p>
 
                 <p>
-                    <b>作用域提升:</b> On runtime, all var and function declarations are moved to the beginning of each function (its scope) - this is known as Hoisting. Having said so, it is a good practice to declare all the vars altogether on the first line, in order to avoid false expectations with a var that got declared late but happened to hold a value before - this is a common problem for programmers coming from languages with block scope.
+                    <b>作用域提升:</b> 在运行时，所有定义的变量和函数声明都将会移到一个作用域的最开始部分，这种情况被成为作用域提升。
+                    所以把所有的变量定义都定义在作用域的开头是一个很好的习惯，这样我们就可以避免，一个变量在后面声明，却可以在前面初始化。
                 </p>
 
                 <p class="source">
@@ -184,8 +192,8 @@
                 <h3>函数绑定</h3>
 
                 <p>
-                    函数绑定是你刚接触JavaScript时很有可能接触不到的一个概念。但是当你遇到一个问题，你需要把一个上下文环境传到另一个function里面，
-                    那个时候你可能会意识到你实际需要的便是<b>Function.prototype.bind()</b>
+                    函数绑定是你刚接触JavaScript时很有可能就没接触到的一个概念。但是当你遇到一个问题，比如你需要把一个上下文环境传到另一个function里面，
+                    那个时候你可能需要的是JavaScript里面已经提供的标准方法：<b>Function.prototype.bind()</b>
                 </p>
 
                 <p class="source">
@@ -243,11 +251,12 @@
                 <h3>描述</h3>
 
                 <p>
-                    While JavaScript contains design patterns that are exclusive to the language, many classical design patterns can also be implemented.
+                    尽管JavaScript有一些自己语言本身特定的设计模式，但是很多传统的设计模式同样可以使用JavaScript实现。
                 </p>
 
                 <p>
-                    A good way to learn about these is <a target="_blank" href="https://twitter.com/addyosmani">Addy Osmani</a>’s open source book <a target="_blank" href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">Learning JavaScript Design Patterns</a>, and the links below are (in the majority) based on it.
+                    如果想深入学习一下JavaScript的设计模式，建议直接看一下Addy Osmani写的一本书《JavaScript设计模式》，作者也开源了<a target="_blank" href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">英文版</a>
+                    下面的链接主要也都是基于这本开源的电子书。
                 </p>
 
                 <h3>设计模式</h3>
@@ -262,51 +271,51 @@
                 </section>
 
                 <p class="source">
-                    Creational Design Patterns
+                    创建型设计模式 Creational Design Patterns
                 </p>
 
                 <section class="txt">
                     <ul>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#wrapperpatternjquery'>Adapter</a></li>
-                        <li><a target="_blank" href='http://www.joezimjs.com/javascript/javascript-design-patterns-bridge/'>Bridge</a></li>
-                        <li><a target="_blank" href='http://www.joezimjs.com/javascript/javascript-design-patterns-composite/'>Composite</a></li>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#decoratorpatternjavascript'>Decorator</a></li>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#facadepatternjavascript'>Facade</a></li>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailflyweight'>Flyweight</a></li>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript'>Module</a></li>
-                        <li><a target="_blank" href='http://www.joezimjs.com/javascript/javascript-design-patterns-proxy/'>Proxy</a></li>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript'>Revealing Module</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#wrapperpatternjquery'>Adapter（适配器）模式</a></li>
+                        <li><a target="_blank" href='http://www.joezimjs.com/javascript/javascript-design-patterns-bridge/'>Bridge（桥连）模式</a></li>
+                        <li><a target="_blank" href='http://www.joezimjs.com/javascript/javascript-design-patterns-composite/'>Composite（组合）模式</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#decoratorpatternjavascript'>Decorator（装饰者）模式</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#facadepatternjavascript'>Facade（外观）模式</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailflyweight'>Flyweight（享元）模式</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript'>Module（模块）模式</a></li>
+                        <li><a target="_blank" href='http://www.joezimjs.com/javascript/javascript-design-patterns-proxy/'>Proxy（代理）模式</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript'>Revealing Module（揭示模块）模式</a></li>
                     </ul>
                 </section>
 
                 <p class="source">
-                    Structural Design Patterns
+                    结构型设计模式 Structural Design Patterns
                 </p>
 
                 <section class="txt">
                     <ul>
-                        <li><a target="_blank" href='http://www.joezimjs.com/javascript/javascript-design-patterns-chain-of-responsibility/'>Chain of Responsibility</a></li>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#commandpatternjavascript'>Command</a></li>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript'>Mediator</a></li>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript'>Observer</a></li>
+                        <li><a target="_blank" href='http://www.joezimjs.com/javascript/javascript-design-patterns-chain-of-responsibility/'>Chain of Responsibility（职责链）模式</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#commandpatternjavascript'>Command（命令）模式</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript'>Mediator（中介者）模式</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript'>Observer（观察者）模式</a></li>
                     </ul>
                 </section>
 
                 <p class="source">
-                    Behavioral Design Patterns
+                    行为型设计模式 Behavioral Design Patterns
                 </p>
 
-                <h3>MV* Patterns</h3>
+                <h3>MV* 模式</h3>
 
                 <section class="txt">
-                    There are some implementations of the traditional MVC Pattern and its variations in JavaScript.
+                    JavaScript里也可以实现传统的MVC的模式，以及MVC的变化模式
                 </section>
 
                 <section class="txt">
                     <ul>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvc'>MVC Pattern</a></li>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvp'>MVP Pattern</a></li>
-                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvvm'>MVVM Pattern</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvc'>MVC 模式</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvp'>MVP 模式</a></li>
+                        <li><a target="_blank" href='http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvvm'>MVVM 模式</a></li>
                     </ul>
                 </section>
             </div>
@@ -318,7 +327,7 @@
 
                 <h3>描述</h3>
 
-                <p>Various libraries and frameworks to do tests in JavaScript.</p>
+                <p>给JavaScript写测试代码的库和框架</p>
 
                 <h3>链接</h3>
 
@@ -329,7 +338,7 @@
                 </section>
 
                 <p class="source">
-                    Maintained by <a target="_blank" href="https://github.com/visionmedia">TJ Holowaychuk</a>
+                    由 <a target="_blank" href="https://github.com/visionmedia">TJ Holowaychuk</a> 维护
                 </p>
 
                 <section class="txt">
@@ -339,7 +348,7 @@
                 </section>
 
                 <p class="source">
-                    Maintained by <a target="_blank" href="https://github.com/jquery">jQuery</a>
+                    由 <a target="_blank" href="https://github.com/jquery">jQuery</a> 维护
                 </p>
 
                 <section class="txt">
@@ -349,7 +358,7 @@
                 </section>
 
                 <p class="source">
-                    Maintained by <a target="_blank" href="https://github.com/pivotal">Pivotal Labs</a>
+                    由 <a target="_blank" href="https://github.com/pivotal">Pivotal Labs</a> 维护
                 </p>
 
                 <section class="txt">
@@ -359,7 +368,7 @@
                 </section>
 
                 <p class="source">
-                    Maintained by the team behind AngularJS. Mostly by <a target="_blank" href="https://github.com/vojtajina">Vojta Jina</a>
+                    由AngularJS的团队维护。主要由 <a target="_blank" href="https://github.com/vojtajina">Vojta Jina</a> 维护
                 </p>
 
                 <section class="txt">
@@ -369,7 +378,7 @@
                 </section>
 
                 <p class="source">
-                    Maintained by <a target="_blank" href="http://www.sitepen.com/">Sitepen</a>
+                    由 <a target="_blank" href="http://www.sitepen.com/">Sitepen</a> 维护
                 </p>
 
                 <section class="txt">
@@ -379,7 +388,7 @@
                 </section>
 
                 <p class="source">
-                    A JavaScript code coverage tool written in JavaScript, maintained by <a href="https://github.com/gotwarlost">Krishnan Anantheswaran</a>
+                    用JavaScript写的JavaScript代码覆盖工具，由 <a href="https://github.com/gotwarlost">Krishnan Anantheswaran</a> 维护
                 </p>
 
                 <section class="txt">
@@ -389,7 +398,7 @@
                 </section>
 
                 <p class="source">
-                    Standalone test spies, stubs and mocks for JavaScript. No dependencies, works with any unit testing framework. Created by <a href="http://cjohansen.no">Christian Johansen</a>, maintained by <a href="https://github.com/cjohansen/Sinon.JS/">Sinon.JS community</a>.
+                    作为一个辅助的测试工具集，可以跟其他的任意测试框架结合使用，由 <a href="http://cjohansen.no">Christian Johansen</a> 创建，由 <a href="https://github.com/cjohansen/Sinon.JS/">Sinon.JS community</a> 维护。
                 </p>
 
                 <section class="txt">
@@ -399,7 +408,7 @@
                 </section>
 
                 <p class="source">
-                    A test helper to mock functions and the XHR object, maintained by <a href="http://leobalter.github.io">Leo Balter</a>
+                    测试的帮助工具集，可以用来模拟function和XHR对象，由 <a href="http://leobalter.github.io">Leo Balter</a> 维护
                 </p>
             </div>
         </section>
@@ -408,7 +417,7 @@
             <div class="wrapper">
                 <h1><a href="#frameworks">框架</a></h1>
 
-                <h3>General Purpose</h3>
+                <h3>一般用途</h3>
 
                 <section class="txt">
                     <ul>
@@ -417,7 +426,7 @@
                 </section>
 
                 <p class="source">
-                    jQuery is a fast, small, and feature-rich JavaScript library. Built by <a target="_blank" href='https://twitter.com/jeresig'>John Resig</a>.
+                    jQuery is a fast, small, and feature-rich JavaScript library. 由 <a target="_blank" href='https://twitter.com/jeresig'>John Resig</a>创建
                 </p>
 
                 <section class="txt">
@@ -710,6 +719,7 @@
                 </section>
 
                 <p class="source">
+                    Kiwi.js是由来自新西兰的GameLab公司开发的一款全新的开源HTML5 JavaScript游戏引擎，主张Mobile First。有些人称它为HTML5游戏引擎界的WordPress
                     Kiwi.js is a fun and friendly Open Source HTML5 Game Engine. Some people call it the WordPress of HTML5 game engines
                 </p>
 
@@ -720,7 +730,7 @@
                 </section>
 
                 <p class="source">
-                    Panda.js is a HTML5 game engine for mobile and desktop with Canvas and WebGL rendering.
+                    Panda.js是一个HTML5的游戏引擎，可以用于开发手机或者桌面游戏，它带有 Canvas 和 WebGL 渲染。
                 </p>
             </div>
         </section>
@@ -729,7 +739,7 @@
             <div class="wrapper">
                 <h1><a href="#news">资讯</a></h1>
 
-                <h3>Websites</h3>
+                <h3>网站 Websites</h3>
                 <div class="links-container">
                     <p class="source link">
                         <a href="https://www.javascript.com" target="_blank">JavaScript.com</a>
@@ -764,7 +774,7 @@
                     </p>
                 </div>
 
-                <h3>Newsletter</h3>
+                <h3>新闻简报 Newsletter</h3>
                 <div class="links-container">
                     <p class="source link">
                         <a href="http://javascriptweekly.com/" target="_blank">JavaScript Weekly</a>
